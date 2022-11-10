@@ -8,12 +8,10 @@
 //     divEl.innerHTML += "<p>Thank you for buying</p>"
 // })
 
-
 // const recipient = "Alex"
 // const sender = "Swargiary"
 // const email = `Hey ${recipient}! How is it going? Cheers ${sender}`
 // console.log(email)
-
 
 // console.log(Boolean(""))    //false
 // console.log(Boolean("0"))   //true
@@ -21,7 +19,6 @@
 // console.log(Boolean(null))  //false
 // console.log(Boolean([0]))   //true
 // console.log(Boolean(-0))    //false
-
 
 // function greetingUser(greeting, name) {
 //     let x = `${greeting}! ${name}.`
@@ -35,6 +32,7 @@
 // console.log(add(9, 102))
 
 // *******************RECAP PRACTICE*******************
+
 /*
 const player = "Sahil"
 const opponent = "James"
@@ -95,17 +93,18 @@ function genSentence(str, arr) {
 const rtrn = genSentence("best fruits", ["Apple", "Bannana"])
 console.log(rtrn)
 */
-// rendering images through javascript for dynamic
-
+// rendering images through javascript
 const teamImgs = [
-    "profile-photo/img1.jpg",
-    "profile-photo/img2.jpg",
-    "profile-photo/img3.jpg",
+    "profile_photo/img1.jpg",
+    "profile_photo/img2.jpg",
+    "profile_photo/img3.jpg",
 ]
 const container = document.querySelector("#container")
-function renderImgs(img1, img2, img3) {
+let imgDom = ""
+function renderImgs() {
     for (let i = 0; i < teamImgs.length; i++) {
-        container.innerHTML += `<img class="team-profile-img" src="${teamImgs[i]}">`
+       imgDom += `<img alt="Employee of the company" class="team-profile-img" src="${teamImgs[i]}">`
     }
+    container.innerHTML = imgDom
 }
-renderImgs() 
+renderImgs()
