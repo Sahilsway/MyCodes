@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Swing-12-MigLayout/lib/miglayout-core-11.0.jar",
+        "Swing-12-MigLayout/lib/miglayout-core-11.0-javadoc.jar",
+        "Swing-12-MigLayout/lib/miglayout-core-11.0-sources.jar",
+        "Swing-12-MigLayout/lib/miglayout-swing-11.0.jar",
+        "Swing-12-MigLayout/lib/miglayout-swing-11.0-javadoc.jar",
+        "Swing-12-MigLayout/lib/miglayout-swing-11.0-sources.jar"
+    ]
+}
