@@ -4,7 +4,7 @@ package com.java.gridlayout;
    It lays out components in a rectangular grid 
    It devides JFrame or JPanel in equialy sized rectangles and one rectangle holds one component*/
 
-import java.awt.*;
+import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

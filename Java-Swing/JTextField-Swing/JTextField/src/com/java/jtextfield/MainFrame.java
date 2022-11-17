@@ -39,6 +39,7 @@ public class MainFrame {
 
         /* JPanel */
         panel = new JPanel();
+        panel.setBackground(Color.GRAY);
         panel.setLayout(new FlowLayout());
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
@@ -51,7 +52,7 @@ public class MainFrame {
         label.setFont(new Font("Arial", Font.BOLD, 24));
         panel.add(label);
 
-        frame.add(panel);
+        frame.add(panel, BorderLayout.NORTH);
         
     }
 

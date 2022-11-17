@@ -3,7 +3,7 @@ package com.java.borderlayout;
 /* A border layout can hold no more than a component but lucky us,
    'JPanel' component can hold other components */
 
-import java.awt.*;
+import java.awt.BorderLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
