@@ -24,7 +24,7 @@ public class MainFrame {
         frame = new JFrame();
         frame.setTitle("FlawLayout Demo");
 
-        /*Initializing FlawLayout manager to JPanel explicitly*/
+        /*Initializing FlowLayout manager to JPanel explicitly*/
         panel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 5));
         panel.setBackground(Color.PINK);
 
