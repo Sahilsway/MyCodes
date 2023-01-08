@@ -1,0 +1,452 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 5px;
+
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff;
+    
+}
+
+header {
+
+    width: 98%;
+    height: 7vw;
+
+    display: flex;
+
+    padding: 1% 1% 0% 1%;
+    font-size: 1.2vw;
+    background-image: linear-gradient(#8995a0, #f3f7f6);
+    border-bottom: 4px solid black;
+}
+
+.logo {
+    width: 13%;
+    height: 100%;
+
+}
+
+.header1 {
+    margin: 1% 0 0 1%;
+
+}
+
+.header2 {
+    margin-left: auto;
+    margin-right: 2vw;
+    margin: 1% 2vw 0 auto;
+}
+
+/*-------------navbar start--------------*/
+
+ul {
+
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    background-color: #000000;
+    border-bottom: 3px solid #ffffff;
+    border-top: 2px solid #ffffff;
+}
+
+
+ul li {
+
+    padding: 8px 0px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    justify-content: space-between;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    transition: 0.5s;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+
+ul li :active {
+    background: #fff;
+    color: blue;
+}
+
+ul li:hover {
+    background-color: rgb(179, 179, 179);
+    font-weight: 600;
+    color: black;
+    letter-spacing: 2px;
+
+
+}
+
+/*----HIDDEN NAV----*/
+
+ul li ul {
+    margin-top: 9px;
+    border-top: none;
+    position: relative;
+    display: block;
+    color: white;
+
+}
+
+ul li ul li {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 3px rgb(160, 160, 160);
+    display: none;
+    letter-spacing: 2px;
+    height: auto;
+}
+
+ul li:hover ul li {
+    display: block;
+
+}
+
+ul li ul li:hover {
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+
+}
+
+ul li ul li:active {
+    background-color: black;
+
+}
+
+.content a {
+    text-align: center;
+    background: #f5f;
+    color: black;
+    border: 3px solid white;
+    box-shadow: 0 0 30px #f0f;
+    letter-spacing: 1px;
+    font-size: 5rem;
+    width: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 5vw;
+    border-radius: 40px;
+    transition: 0.5s;
+
+
+}
+
+.content a:hover {
+    background: #f2f;
+    letter-spacing: 4px;
+    box-shadow:
+        0 0px 5px #f8f,
+        0 0px 10px #f8f,
+        0 0px 15px #f8f,
+        0 0px 20px #f8f,
+        0 0px 30px #f8f;
+}
+
+.content a:active {
+    background: #fff;
+}
+
+/*-------about-----*/
+
+
+
+
+
+.about {
+
+    width: 90%;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    font-size: 3rem;
+    color: white;
+    background-image: linear-gradient(black, #7a7a7a);
+    margin: 40px 35px 20px 35px;
+    padding: 60px 55px 30px 55px;
+    line-height: 30px;
+
+}
+
+.about h1 {
+    
+    padding: 0% 0% 5% 0%;
+
+}
+
+/*---links---*/
+
+.contact {
+   
+    max-width: 360px;
+    color: black;
+    font-size: 3rem;
+    margin: 60px;
+    padding: 60px;
+    display: flex;
+
+    flex-direction: column;
+
+    background-image: linear-gradient(#a1a1a1, rgb(0, 0, 0));
+
+}
+
+.contact h2 {
+    color: yellow;
+    text-decoration: 2px underline greenyellow;
+    text-decoration-style: dashed;
+    letter-spacing: 2px;
+    margin: 40px 0 40px 0;
+    text-align: center;
+}
+
+
+/*------gallery---*/
+
+
+
+.gallery {
+
+    width: 100%;
+    height: 50%;
+}
+
+.gallery h1 {
+    font-size: 7rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+
+ .about-gallery p {
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    margin: 5% 5% 10% 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------media quaries----*/
+
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 4px;
+    }
+
+    .content a {
+        font-size: 4rem;
+        padding: 8px 2vw;
+    }
+
+    .about {
+        margin: 25px 10px;
+        padding: 50px 35px 30px 35px;
+    }
+
+    .about-me {
+        display: inline-block;
+    }
+
+    .about-me img {
+        width: 100%;
+        height: auto;
+        min-height: 50vw;
+        max-height: 70vw;
+    }
+
+    .about-me p {
+        padding-right: 0px;
+        word-spacing: 4px;
+
+    }
+
+    .contact {
+   
+    
+        margin: 30px 12% 20px 12%;
+        padding: 40px 25px 30px 25px;
+    }
+
+.gallery img {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 70px;
+}
+    
+}
+
+
+/*-----media quaries 3------*/
+
+
+@media screen and (max-width:900px) and (min-width:720px) {
+    .about-me img {
+        height: auto;
+        border: 5px solid white;
+
+        width: 100%;
+        max-height: 30vw;
+    }
+
+    .about {
+        word-spacing: 4px;
+        margin: 40px 15px 20px 15px;
+        padding: 60px 35px 30px 35px;
+        line-height: 25px;
+    }
+
+    .about-me p {
+        padding-right: 15px;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+
+    }
+.gallery img {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 70px;
+}
+    .contact{
+        margin: 40px 20% 10px 20%;
+    }
+}
+
+/*-----media quaries 2------*/
+
+@media screen and (max-width:720px) and (min-width:601px) {
+    .about-me {
+        display: inline-block;
+    }
+
+    .about-me img {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+
+        max-height: 50vw;
+        border: 5px solid VIOLET;
+    }
+
+
+    .about {
+
+        margin: 40px 15px 20px 15px;
+        padding: 60px 35px 30px 35px;
+
+    }
+
+    .about-me p {
+        padding-right: 0px;
+        word-spacing: 4px;
+
+
+    }
+    .gallery img {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 70px;
+}
+    .contact{
+        margin: 40px 15% 10px 15%;
+    }
+}
+
+/*-----media quaries-4------*/
+
+@media screen and (min-width:1080px) {
+    .about-me img {
+
+        border: 5px solid yellow;
+    }
+
+    .about {
+        width: 55%;
+        margin: 35px 20px;
+        text-align: center;
+    }
+
+    .about-me {
+        display: inline-block;
+        padding: 40px 25px 20px 25px;
+    }
+
+    .about-me p {
+        padding: 0;
+        text-align: justify;
+    }
+
+    .about-me img {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-left: 5%;
+        max-height: 30vw;
+    }
+
+
+    .aboutlink {
+        display: flex;
+    }
+
+
+    .contact {
+        max-width: 360px;
+        margin: 30px;
+        padding: 60px;
+    }
+    
+   .gallery img {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    top: 70px;
+    
+} 
+}

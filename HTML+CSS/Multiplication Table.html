@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication Table</title>
+</head>
+
+<body>
+
+    <form name = "IF" action>
+
+        <h2>Enter your number : </h2> 
+        <input type = "text" id = "num" >
+
+    </form>
+
+    <br>
+
+    <button onclick = "myFunction()">Submit</button>
+
+    <p id = "MT"></p>
+
+    <script>
+
+        function myFunction()
+        {
+
+            var Number = document.getElementById("num").value;  
+      
+            if (Number == null || Number == ""){  
+
+                //Check validation
+                alert("Please enter a number");
+
+            }else {
+
+                var text = "";
+                var i;
+
+                //Print multiplication table
+                for (i = 1; i <= 10; i++) {
+                text += Number + " * " + i + " = " + Number*i + "<br>"; 
+                }
+
+                document.getElementById("MT").innerHTML = text;
+            
+            }
+        }
+
+    </script>
+
+</body>
+</html>

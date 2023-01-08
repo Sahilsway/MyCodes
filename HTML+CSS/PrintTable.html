@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication Table</title>
+</head>
+
+<body>
+
+    <form name = "IF" action>
+
+        <h2>Enter your number : </h2> 
+        <input type = "text" id = "num" name = "TableNumber">
+
+    </form>
+
+    <br>
+
+    <button onclick = "myFunction()">Submit</button>
+
+    <p id = "MT"></p>
+
+    <script>
+
+        function myFunction()
+        {
+
+            var name = document.IF.name.value;  
+      
+            if (name == null){  
+
+                alert("Value can't be blank");
+
+            }else {
+
+                var text = "";
+                var Number = document.getElementById("num").value;
+                var i;
+
+                for (i = 1; i <= 10; i++) {
+                text += Number + " * " + T + " = " + Number*T + "<br>"; 
+                }
+
+                document.getElementById("MT").innerHTML = text;
+            
+            }
+        }
+
+    </script>
+
+</body>
+</html>

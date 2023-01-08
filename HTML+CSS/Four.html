@@ -1,0 +1,46 @@
+<!-- Write a simple AJAX script when takes input form and HTML form and makes a POST request to a backend script -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+
+</head>
+<body>
+    <div id="contactForm">
+        <form method="post" name="contactFrom">
+            <h2>FORM</h2>
+
+            <div>
+                <h4>Enter Your Name : </h4>
+                <input type="name" name="name" placeholder="Name" required>
+            </div>
+            <div>
+                <h4>Enter Your Password : </h4>
+                <input type="password" name="password" placeholder="password" required>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Submit Now">
+            </div>
+        </form>
+
+        <script>
+
+            jQuery ('#contactForm').on('submit',funtion(e)) {
+                jQuery.ajax({
+                    type:'post',
+                    data:jQuery('#contactForm').serialize(),
+                    success:function(result) {
+                        alert(result);
+                    }
+                });
+                e.preventDefault();
+            }
+        </script>
+    </div>
+</body>
+</html>
